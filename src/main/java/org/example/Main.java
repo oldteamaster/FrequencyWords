@@ -13,7 +13,7 @@ public class Main {
             String line;
             Map<String, Integer> map = new HashMap<>();
             while ((line = bufferedReader.readLine()) != null) {
-                for (String word : line.split(",\s+")) {
+                for (String word : line.split("\s+")) {
                     map.put(word, map.getOrDefault(word, 0) + 1);
                 }
 
